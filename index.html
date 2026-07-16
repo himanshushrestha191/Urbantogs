@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="color-scheme" content="light dark">
+  <script>
+  (function(){
+    try{
+      var saved = localStorage.getItem('urbantogs.theme');
+      var system = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      var theme = saved || system;
+      document.documentElement.dataset.theme = theme;
+      document.documentElement.classList.toggle('dark', theme === 'dark');
+      document.documentElement.style.colorScheme = theme;
+    }catch(e){ document.documentElement.dataset.theme = 'light'; }
+  })();
+</script><title>Urban Togs | Bold Accessories Store</title>
+  <meta name="description" content="Urban Togs is a modern accessories ecommerce website for rings, earrings, hair accessories, charms, sunglasses, and urban styling pieces.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <script>window.tailwind=window.tailwind||{};window.tailwind.config={darkMode:'class',theme:{extend:{colors:{ink:'#0b0b0b',cream:'#f8f1df',paper:'#fffaf0',gold:'#d5b46a',thorn:'#151515'},fontFamily:{serif:['Georgia','serif']},boxShadow:{soft:'0 22px 70px rgba(50,38,14,.12)'}}}};</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg-noise"></div>
+  <div class="bg-black py-2 text-center text-xs font-black uppercase tracking-[.18em] text-[#fffaf0]"><span data-announcement>Launch offer: 10% off with URBAN10</span></div>
+  <header class="nav-shell">
+    <div class="ut-container flex items-center justify-between gap-4 py-4">
+      <a class="flex items-center gap-3" href="index.html" aria-label="Urban Togs home"><img class="logo-mark" src="assets/img/logo.png" alt="Urban Togs logo"><span><strong class="brand-word block text-lg leading-none">Urban Togs</strong><small class="font-bold uppercase tracking-[.18em] text-stone-500">Accessories Studio</small></span></a>
+      <nav class="desktop-nav hidden items-center gap-7 text-sm font-black uppercase tracking-[.13em] text-stone-700 md:flex" aria-label="Main navigation"><a class="text-black" href="index.html">Home</a><a href="shop.html">Shop</a><a href="cart.html">Bag</a><a href="admin.html">Admin</a></nav>
+      <div class="flex items-center gap-2"><a class="btn btn-outline hidden sm:inline-flex" href="shop.html">Shop now</a><button class="icon-btn relative" data-open-cart aria-label="Open cart">🛍️<span class="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-black px-1 text-[10px] font-black text-white" data-cart-count>0</span></button><button id="mobile-menu-button" class="icon-btn md:hidden" aria-label="Open menu">☰</button></div>
+    </div>
+    <div id="mobile-panel" class="mobile-panel mx-3 mb-3 rounded-3xl bg-black p-4 text-[#fffaf0] md:hidden"><a class="block rounded-2xl p-3 font-black" href="index.html">Home</a><a class="block rounded-2xl p-3 font-black" href="shop.html">Shop</a><a class="block rounded-2xl p-3 font-black" href="cart.html">Cart</a><a class="block rounded-2xl p-3 font-black" href="admin.html">Admin</a></div>
+  </header>
+
+  <main id="main">
+    <section class="relative overflow-hidden py-12 sm:py-16 lg:py-24">
+      <div class="hero-orb left-[7%] top-24 h-36 w-36 bg-[var(--gold)] opacity-30"></div>
+      <div class="hero-orb right-[10%] top-40 h-48 w-48 bg-[#e8c5b2] opacity-35" style="animation-delay:1.2s"></div>
+      <div class="ut-container grid items-center gap-10 lg:grid-cols-[1.02fr_.98fr]">
+        <div class="reveal">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/60 px-4 py-2 text-xs font-black uppercase tracking-[.16em]"><span class="h-2 w-2 rounded-full bg-[var(--gold)]"></span>Designed to make small details feel expensive</div>
+          <h1 class="serif max-w-4xl text-6xl font-black leading-[.88] tracking-tight text-gradient sm:text-7xl lg:text-8xl">Accessories with main-character energy.</h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-stone-700">Urban Togs sells bold, wearable accessories for everyday outfits — pearls, rings, clips, charms, shades, and tiny details that make people look twice.</p>
+          <div class="mt-8 flex flex-wrap gap-3"><a class="btn btn-dark" href="shop.html">Shop the drop</a><a class="btn btn-light" href="#featured">See bestsellers</a></div>
+          <div class="mt-9 grid max-w-2xl grid-cols-3 gap-3">
+            <div class="glass rounded-3xl p-4"><strong class="block text-2xl">10%</strong><span class="text-xs font-bold uppercase tracking-wide text-stone-500">URBAN10</span></div>
+            <div class="glass rounded-3xl p-4"><strong class="block text-2xl">Free</strong><span class="text-xs font-bold uppercase tracking-wide text-stone-500">above Rs. 5k</span></div>
+            <div class="glass rounded-3xl p-4"><strong class="block text-2xl">Limited</strong><span class="text-xs font-bold uppercase tracking-wide text-stone-500">small drops</span></div>
+          </div>
+        </div>
+        <div class="reveal relative">
+          <div class="dark-glass relative overflow-hidden rounded-[3rem] p-5 text-[#fffaf0] sm:p-8">
+            <div class="absolute -right-16 -top-16 h-52 w-52 rounded-full bg-[var(--gold)] opacity-25 blur-2xl"></div>
+            <img class="mx-auto h-28 w-28 rounded-full border border-white/20 object-cover shadow-2xl" src="assets/img/logo.png" alt="Urban Togs logo">
+            <div class="mt-8 rounded-[2.4rem] bg-[#fffaf0] p-5"><img class="mx-auto h-[390px] object-contain drop-shadow-2xl" src="assets/img/products/noir-pearl-drops.svg" alt="Noir Pearl Drops"></div>
+            <div class="mt-5 grid gap-3 sm:grid-cols-2"><div class="rounded-3xl border border-white/10 bg-white/10 p-4"><p class="text-xs font-black uppercase tracking-[.16em] text-white/55">Psychology cue</p><h3 class="mt-2 font-black">Low-stock urgency</h3></div><div class="rounded-3xl border border-white/10 bg-white/10 p-4"><p class="text-xs font-black uppercase tracking-[.16em] text-white/55">Trust cue</p><h3 class="mt-2 font-black">Clean checkout</h3></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee"><div class="marquee-track"><span>Urban Togs</span><span>Rings</span><span>Earrings</span><span>Hair Clips</span><span>Charms</span><span>Sunglasses</span><span>Urban Togs</span><span>Rings</span><span>Earrings</span><span>Hair Clips</span><span>Charms</span><span>Sunglasses</span></div></div>
+
+    <section class="py-16 sm:py-24">
+      <div class="ut-container">
+        <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><span class="badge badge-gold">Shop by mood</span><h2 class="serif mt-4 text-5xl font-black tracking-tight md:text-6xl">Make choosing easy.</h2></div><p class="max-w-xl text-stone-600 leading-7">Customers buy faster when choices are clear. These categories are built around how people style, not just product labels.</p></div>
+        <div class="grid gap-4 md:grid-cols-4">
+          <a class="glass reveal rounded-[2rem] p-6 transition hover:-translate-y-1 hover:bg-white" href="shop.html"><span class="text-4xl">✨</span><h3 class="serif mt-5 text-2xl font-black">Daily shine</h3><p class="mt-2 text-sm leading-6 text-stone-600">Rings, hoops, bracelets, and pieces that work every day.</p></a>
+          <a class="glass reveal rounded-[2rem] p-6 transition hover:-translate-y-1 hover:bg-white" href="shop.html"><span class="text-4xl">🖤</span><h3 class="serif mt-5 text-2xl font-black">Street finish</h3><p class="mt-2 text-sm leading-6 text-stone-600">Bold details that sharpen simple fits instantly.</p></a>
+          <a class="glass reveal rounded-[2rem] p-6 transition hover:-translate-y-1 hover:bg-white" href="shop.html"><span class="text-4xl">🎁</span><h3 class="serif mt-5 text-2xl font-black">Gift ready</h3><p class="mt-2 text-sm leading-6 text-stone-600">Easy picks for birthdays, besties, and small surprises.</p></a>
+          <a class="glass reveal rounded-[2rem] p-6 transition hover:-translate-y-1 hover:bg-white" href="shop.html"><span class="text-4xl">🪞</span><h3 class="serif mt-5 text-2xl font-black">Hair edit</h3><p class="mt-2 text-sm leading-6 text-stone-600">Clips, scrunchies, and pins for low-effort polish.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured" class="py-16 sm:py-24">
+      <div class="ut-container">
+        <div class="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end"><div><span class="badge badge-dark">Bestsellers</span><h2 class="serif mt-4 text-5xl font-black tracking-tight md:text-6xl">Start with what already works.</h2></div><a class="btn btn-outline" href="shop.html">View all products</a></div>
+        <div id="featured-grid" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24">
+      <div class="ut-container grid gap-5 lg:grid-cols-[1.1fr_.9fr]">
+        <div class="dark-glass reveal overflow-hidden rounded-[3rem] p-8 text-[#fffaf0] md:p-12"><span class="badge bg-white/10 text-white">Owner tools included</span><h2 class="serif mt-5 max-w-2xl text-5xl font-black tracking-tight md:text-6xl">Add products, photos, stock, prices, and orders.</h2><p class="mt-5 max-w-2xl text-white/70 leading-8">The admin page lets you upload product photos, manage inventory, set payment links, export orders, and keep the shop visually consistent.</p><div class="mt-7 flex flex-wrap gap-3"><a class="btn btn-gold" href="admin.html">Open admin</a><a class="btn btn-light" href="README.md">Setup guide</a></div></div>
+        <div class="glass reveal rounded-[3rem] p-8 md:p-10"><span class="badge badge-gold">Conversion psychology</span><h3 class="serif mt-5 text-4xl font-black">Built to reduce hesitation.</h3><div class="mt-7 grid gap-4"><div class="flex gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-black text-white">1</span><div><strong>Visible savings</strong><p class="text-sm text-stone-600">Compare-at prices and coupon cues make value obvious.</p></div></div><div class="flex gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-black text-white">2</span><div><strong>Low stock labels</strong><p class="text-sm text-stone-600">Scarcity encourages action without feeling pushy.</p></div></div><div class="flex gap-4"><span class="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-black text-white">3</span><div><strong>Sticky cart drawer</strong><p class="text-sm text-stone-600">Customers can review and checkout without losing flow.</p></div></div></div></div>
+      </div>
+    </section>
+
+    <section class="py-16 sm:py-24">
+      <div class="ut-container">
+        <div class="mb-10 flex flex-col justify-between gap-4 md:flex-row md:items-end"><div><span class="badge badge-gold">Fresh arrivals</span><h2 class="serif mt-4 text-5xl font-black tracking-tight md:text-6xl">New pieces, small drop.</h2></div></div>
+        <div id="new-grid" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black py-14 text-[#fffaf0]">
+    <div class="ut-container grid gap-10 md:grid-cols-[1.1fr_.9fr]">
+      <div><div class="flex items-center gap-3"><img class="logo-mark border-white/20" src="assets/img/logo.png" alt="Urban Togs logo"><div><strong class="brand-word block">Urban Togs</strong><small class="font-bold uppercase tracking-[.18em] text-white/45">Accessories Studio</small></div></div><p class="mt-5 max-w-md text-white/60">A complete ecommerce theme for an accessories brand with a bold monochrome identity.</p></div>
+      <form id="newsletter-form" class="rounded-[2rem] border border-white/10 bg-white/5 p-5"><h3 class="serif text-3xl font-black">Get drop alerts</h3><p class="mt-2 text-sm text-white/55">Build a customer list before your next launch.</p><div class="mt-4 flex gap-2"><input class="input bg-white/10 text-white placeholder:text-white/40" type="email" required placeholder="Email address"><button class="btn btn-gold">Join</button></div></form>
+    </div>
+  </footer>
+  <div id="drawer-backdrop" class="drawer-backdrop"></div><aside id="cart-drawer" class="cart-drawer" aria-label="Cart drawer"></aside><div id="quick-modal" class="hidden"></div>
+  <script defer src="assets/js/store.js"></script><script defer src="assets/js/ui.js"></script><script defer src="assets/js/home.js"></script>
+</body>
+</html>
